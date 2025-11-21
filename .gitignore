@@ -1,0 +1,48 @@
+# ----------------------------------------
+# Python
+# ----------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pklz
+*.pytest_cache/
+*.coverage
+htmlcov/
+
+# Виртуальные окружения
+venv/
+ENV/
+env/
+.venv/
+.conda/
+
+# Кэши и временные файлы
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ----------------------------------------
+# PyCharm / IntelliJ
+# ----------------------------------------
+.idea/
+
+# ----------------------------------------
+# OS-specific files
+# ----------------------------------------
+Thumbs.db
+$RECYCLE.BIN/
