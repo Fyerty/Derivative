@@ -12,7 +12,7 @@ def preparation(exp: str) -> list:
     for dig in digits:
         exp = exp.replace(f"{dig}x", f"{dig}*x")
 
-    exp = exp.split("+")
+    # exp = exp.split("+")
 
     return exp
 
