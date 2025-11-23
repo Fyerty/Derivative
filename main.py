@@ -38,7 +38,7 @@ def deriv_polynomial(polynom: str) -> str:
             v = u[1].split("^")
             if len(v) == 1: v += [1]
             deriv += f"+{flint(float(u[0]) * float(v[1]))}x^{flint(v[1]) - 1}"
-        except IndexError:  ...
+        except IndexError:  pass
 
     deriv = deriv.replace("+-", "-").replace("^1", "").replace("x^0", "")
 
