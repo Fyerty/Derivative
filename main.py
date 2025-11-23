@@ -6,7 +6,7 @@ from string import digits
 "-5x - 5x^2 - 4x^0.5"
 
 
-def preparation(exp: str) -> list:
+def preparation(exp: str) -> str:
     exp = exp.replace(" ", "").replace("-", "+-")
 
     for dig in digits:
@@ -44,5 +44,5 @@ def deriv_polynomial(polynom: str) -> str:
 
     return deriv if deriv[0] == "-" else deriv.replace("+-", "-")[1:]
 
-
-print("Производная: " + deriv_polynomial(preparation(input("Введите выражение: "))))
+while True:
+    print("Производная: " + deriv_polynomial(preparation(input("Введите выражение: "))))
